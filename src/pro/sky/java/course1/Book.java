@@ -30,11 +30,11 @@ public class Book {
         private String firstname;
         private String surName;
 
-        public String getFirstname(){
+        public String getFirstname() {
             return firstname;
         }
 
-        public String getSurName(){
+        public String getSurName() {
             return surName;
         }
     }
