@@ -1,6 +1,6 @@
 package pro.sky.java.course1;
-public class Main {
 
+public class Main {
     public static void main(String[] args) {
 
         Book book1 = new Book("Hitchhiker's guide to the galaxy", 1978, "Douglas", "Adams");
