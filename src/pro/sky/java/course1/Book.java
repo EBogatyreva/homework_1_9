@@ -1,21 +1,20 @@
 package pro.sky.java.course1;
 
 public class Book {
-    Author author = new Author();
-
     private final String name;
     private int yearOfPublication;
+    private Author author;
 
     //___конструкторы для класса Book
-    public Book(String n, int year, String f, String s) {
-        this.name = n;
+    public Book(String name, int year, Author author) {
+        this.name = name;
         this.yearOfPublication = year;
-        author.setName(f, s);
+        this.author = author;
     }
 
-    public Book(String name, String firstName, String surName) {
+    public Book(String name, Author author) {
         this.name = name;
-        author.setName(firstName, surName);
+        this.author = author;
     }
 
     public Book(String name, int yearOfPublication) {
@@ -32,6 +31,14 @@ public class Book {
         return name;
     }
 
+    public String getFirstnameOfAuthor() {
+        return author.getFirstname();
+    }
+
+    public String getSurNameOfAuthor() {
+        return author.getSurName();
+    }
+
     public int getYearOfPublication() {
         return yearOfPublication;
     }
@@ -39,4 +46,5 @@ public class Book {
     public void setYearOfPublication(int yearOfPublication) {
         this.yearOfPublication = yearOfPublication;
     }
+
 }

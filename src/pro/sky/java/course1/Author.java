@@ -4,10 +4,22 @@ public class Author {
     private String firstName;
     private String surName;
 
-    public void setName(String f, String s) {
-        this.firstName = f;
-        this.surName = s;
+
+    public Author(String firstName, String surName) {
+        this.firstName = firstName;
+        this.surName = surName;
     }
+
+    //_____________________________________________________________________________________________
+    //почему у меня остались не удел вот эти методы? т.е. мы записываем  все через класс BOOK?
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+    //_____________________________________________________________________________________________
 
     public String getFirstname() {
         return firstName;
