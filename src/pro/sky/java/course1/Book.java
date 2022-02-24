@@ -7,7 +7,7 @@ public class Book {
     private int yearOfPublication;
 
     //___конструкторы для класса Book
-    public Book(String n, int year, String f, String s) {//если переменные названны по другому надобюнгость в this отпадает
+    public Book(String n, int year, String f, String s) {
         this.name = n;
         this.yearOfPublication = year;
         author.setName(f, s);
