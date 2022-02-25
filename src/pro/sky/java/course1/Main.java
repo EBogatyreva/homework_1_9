@@ -1,5 +1,4 @@
 package pro.sky.java.course1;
-
 public class Main {
     public static void main(String[] args) {
         Author author1 = new Author("Douglas", "Adams");
