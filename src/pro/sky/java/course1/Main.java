@@ -21,7 +21,7 @@ public class Main {
         Book book4 = new Book("Мертвые души");
         System.out.println("\n" + book4.getName());
 
-//Задание 1.10, пеопределение методов
+        //Задание 1.10, пеопределение методов
         System.out.println(book4);
         System.out.println("book1.hashCode(): " + book1.hashCode());
         System.out.println(book1.equals(book2));
