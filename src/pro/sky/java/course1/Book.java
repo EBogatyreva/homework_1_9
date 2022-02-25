@@ -1,7 +1,5 @@
 package pro.sky.java.course1;
-
 import java.util.Objects;
-
 public class Book {
     private final String name;
     private int yearOfPublication;
