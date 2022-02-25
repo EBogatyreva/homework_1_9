@@ -1,9 +1,13 @@
 package pro.sky.java.course1;
 
+import java.util.Objects;
+
 public class Book {
     private final String name;
     private int yearOfPublication;
     private Author author;
+    private String yearOfPublicationIsEmpty;
+    private String authorIsEmpty;
 
     //___конструкторы для класса Book
     public Book(String name, int year, Author author) {
@@ -45,6 +49,28 @@ public class Book {
 
     public void setYearOfPublication(int yearOfPublication) {
         this.yearOfPublication = yearOfPublication;
+    }
+
+    //переопределение методов
+    public String toString() {
+        if ((yearOfPublication == 0) && (author == null))
+            yearOfPublicationIsEmpty = "- Год публикации не указан,";
+        authorIsEmpty = "автор не указан";
+        return name + " " + yearOfPublicationIsEmpty + " " + authorIsEmpty;
+    }
+
+    public int hashCode() {
+        return Objects.hash(name, yearOfPublication, author);
+    }
+
+
+    public boolean equals(Book book) {
+        if (this == book) {
+            return true;
+        }
+        if (book == null)
+            return false;
+        return false;
     }
 
 }
